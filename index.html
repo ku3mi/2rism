@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./libs/custom-selector/custom-select.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./css/hover.css">
+   <title>2rism</title>
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header">
+      <div class="container container--header">
+         <!-- Header nav -->
+         <nav class="nav">
+            <a href="" class="logo">
+               <img src="./img/logo.svg" alt="">
+            </a>
+
+
+            <ul class="nav-list">
+               <li class="nav-list__item"><a href="#!" class="nav-list__link nav-list__link--active">home</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">hotels</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">restaurants</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">tours</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">destinations</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">activities</a></li>
+               <li class="nav-list__item"><a href="#!" class="nav-list__link">contact</a></li>
+            </ul>
+
+            <div class="user">
+               <div class="user-content">
+                  <span class="user-greeting">Holla,</span><br>
+                  <span class="user__name">Ales Nesetril</span>
+               </div>
+               <div class="user-avatar">
+                  <img class="user__avatar-img" src="./img/login.jpg" alt="">
+               </div>
+            </div>
+
+
+         </nav>
+
+         <!-- Header content -->
+         <div class="header-content">
+            <h1 class="header-title">Discover the most engaging places</h1>
+
+            <button class="button">
+
+               <img src="./img/global-line.svg" alt="">
+               Discover on 3D Globe
+            </button>
+
+         </div>
+
+
+         <!-- Header form -->
+         <form action="destinations" class="header__form form">
+
+
+            <div class="form__input form__input--location">
+               <label for="Location" class="label">Location</label> <br>
+               <select class="select" name="" id="destinations">
+                  <option value="all">Explore nearby destinations</option>
+                  <option value="1">Moscow</option>
+                  <option value="2">Saint Petersburg</option>
+                  <option value="3">Stockholm</option>
+                  <option value="4">Prague</option>
+               </select>
+            </div>
+
+            <div class="form__input form__input--activity">
+               <label for="Location" class="label">Activity</label> <br>
+               <select class="select" name="" id="destinations">
+                  <option value="all">All Activities</option>
+                  <option value="1">Business trip</option>
+                  <option value="2">Travel</option>
+                  <option value="3">Shopping</option>
+                  <option value="4">Tasty food</option>
+               </select>
+            </div>
+
+            <div class="form__input form__input--when">
+               <label for="Location" class="label">When</label> <br>
+               <input type="date" name="Date" id="davaToday">
+            </div>
+
+            <div class="form__input form__input--guests">
+               <label for="Location" class="label">Guests</label> <br>
+               <select class="select" name="" id="destinations">
+                  <option value="all">1 guest </option>
+                  <option value="1">2 guest</option>
+                  <option value="2">3 guest</option>
+                  <option value="3">4 guest</option>
+                  <option value="4">5 guest</option>
+               </select>
+            </div>
+
+
+
+
+
+            <button class="button-search">
+               <img src="./img/search.svg" alt="">
+            </button>
+
+         </form>
+      </div>
+   </header>
+
+
+   <!-- Mauin -->
+   <main class="main">
+
+      <section class="popular">
+         <div class="container">
+            <h2 class="populer-title title">Popular Destinations</h2>
+            <div class="popular-gallery gallery">
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-1.jpg" alt="">
+                  <p class="item-title">Big Sur</p>
+                  <p class="item-subtitle">California, USA</p>
+               </div>
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-2.jpg" alt="">
+                  <p class="item-title">Prescott</p>
+                  <p class="item-subtitle">Arizona, USA</p>
+               </div>
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-3.jpg" alt="">
+                  <p class="item-title">Fort Mayers</p>
+                  <p class="item-subtitle">Florida, USA</p>
+               </div>
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-4.jpg" alt="">
+                  <p class="item-title">Tucson</p>
+                  <p class="item-subtitle">Arizona, USA</p>
+               </div>
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-5.jpg" alt="">
+                  <p class="item-title">St. Joseph</p>
+                  <p class="item-subtitle">Michigan, USA</p>
+               </div>
+               <div class="gallery-item">
+                  <img src="./img/gallery/popular-6.jpg" alt="">
+                  <p class="item-title">Madrid</p>
+                  <p class="item-subtitle">Spain</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="hotel">
+         <div class="container">
+            <h2 class="hotel-title title">Hotels and Restaurants</h2>
+
+            <div class="hotel-gallery gallery">
+               <div class="hotel-item">
+                  <div class="item-img">
+                     <image class="item-img" src="./img/slider-1.jpg" alt="">
+                     </div>
+                  <p class="hotel-name">Monastero Santa Rosa Hotel & Spa</p>
+                  <p class="hotel-place">Salerno, Italy</p>
+               </div>
+
+               <div class="hotel-item">
+                  <div class="item-img">
+                     <image class="item-img" src="./img/slider-2.jpg" alt="">
+                     </div>
+                     <p class="hotel-name">Grand Hotel Tremezzo</p>
+                     <p class="hotel-place star-two">Lake Como, Italy</p>
+               </div>
+
+               <div class="hotel-item">
+                  <div class="item-img">
+                     <image class="item-img" src="./img/slider-3.jpg" alt="">
+                     </div>
+                     <p class="hotel-name">The Oberoi Udaivilas, Udaipur</p>
+                     <p class="hotel-place star-free">Udaipur, India</p>
+               </div>
+
+               <div class="hotel-item">
+                  <div class="item-img">
+                  <image class="item-img" src="./img/slider-4.jpg" alt="">
+                  </div>
+                     <p class="hotel-name">AKA Beverly Hills</p>
+                     <p class="hotel-place star-two">Los Angeles, United States</p>
+               </div>
+
+
+            </div>
+         </div>
+      </section>
+
+
+      <section class="travel">
+         <div class="container">
+            <h2 class="travel-title title">Travel Tips and Advice</h2>
+            <div class="travel-gallery">
+               <div class="travel-item">
+                  <div class="item-img">
+                  <img class="item-img" src="./img/slider-5.jpg" alt="">
+               </div>
+                  <div class="item-content">
+                     <div class="item-title">
+                        East Village Ice Cream Crawl
+                     </div>
+                     <div class="item-text">
+                        We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At
+                        each ice cream store we'll explore the story behind the business and see what makes the ice
+                        cream unique as you savor every…
+                     </div>
+
+                     <div class="item-info">
+                        <div class="info-today">
+                           Today
+                        </div>
+                        <div class="info-person ">
+                           Maria Philips
+                        </div>
+                        <div class="info-comment">
+                           2
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="travel-item">
+                  <div class="item-img">
+                     <img class="item-img" src="./img/slider-6.jpg" alt="">
+                  </div>
+                  <div class="item-content">
+                     <div class="item-title">
+                        Brooklyn Bridge cinematic photo walk
+                     </div>
+                     <div class="item-text">
+                        This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open
+                        to capture clients at different locations upon request for an additional charge.
+                     </div>
+
+                     <div class="item-info">
+                        <div class="info-today">
+                           Today
+                        </div>
+                        <div class="info-person ">
+                           James Calzoni
+                        </div>
+                        <div class="info-comment">
+                           17
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="activities">
+         <div class="container">
+            <h2 class="title">Activities</h2>
+            <div class="activities-gallery">
+               <div class="hover-text-one">
+
+                  <figure class="effect-text-four">
+                     <img src="./img/activities/one.jpg" alt="">
+                       <figcaption>
+                    <p>a sport in which athletes compete using equipment, mainly boats and boats. Sailing, undoubtedly, received its development in those countries where it was convenient to practice this sport based on geographical location.</p>
+                       </figcaption>			
+                    </figure>
+                  <p class="activities-text">Sailing</p>
+               </div>
+               <div class="hover-text-one">
+
+                  <figure class="effect-text-four">
+                     <img src="./img/activities/two.jpg" alt="">
+                       <figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                       </figcaption>			
+                    </figure>
+                  <p class="activities-text">Sailing</p>
+               </div>
+               <div class="hover-text-one">
+
+                  <figure class="effect-text-four">
+                     <img src="./img/activities/free.jpg" alt="">
+                       <figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                     </p>
+                       </figcaption>			
+                    </figure>
+                  <p class="activities-text">Sailing</p>
+               </div>
+               <div class="hover-text-one">
+
+                  <figure class="effect-text-four">
+                     <img src="./img/activities/four.jpg" alt="">
+                       <figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                       </figcaption>			
+                    </figure>
+                  <p class="activities-text">Sailing</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about">
+         <div class="container">
+            <div class="about-content">
+               <div class="about-us">
+                  <div class="about-title title">About Us</div>
+                  <div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien
+                     justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta
+                     consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia
+                     nostra, per inceptos himenaeos.</div>
+                  <button class="about-btn btn">
+                     <a href="#!" class="btn-link">Read more</a>
+                  </button>
+               </div>
+
+
+               <div class="about-img">
+                  <img src="./img/about.jpg" class="about-img" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+
+         <div class="rism-content">
+            <div class="rism">
+               <a href="#!">
+                  <img src="./img/logo-1.svg" alt="">
+               </a>
+               <p>We always make our customers happy by providing as many choises as possible</p>
+               <div class="social">
+                  <img src="./img/socials.svg" alt="">
+               </div>
+            </div>
+            <div class="footer-about">
+               <p class="footer-subtitle">About</p>
+               <ul class="about-list">
+                  <li class="list-item"><a href="#!" class="list-link">About Us</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Features</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">News</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Menu</a></li>
+               </ul>
+            </div>
+
+
+            <div class="footer-company">
+               <p class="footer-subtitle">Company</p>
+               <ul class="about-list">
+                  <li class="list-item"><a href="#!" class="list-link">Why 2rism</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Partner With Us</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">FAQ</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Blog</a></li>
+               </ul>
+            </div>
+
+
+            <div class="footer-about">
+               <p class="footer-subtitle">Support</p>
+               <ul class="about-list">
+                  <li class="list-item"><a href="#!" class="list-link">Account</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Support Center</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Feedback</a></li>
+                  <li class="list-item"><a href="#!" class="list-link">Contact Us</a></li>
+               </ul>
+            </div>
+
+
+            <div class="subscribe">
+               <p class="footer-subtitle">Subscribe on our destination review newsletters</p>
+               <div class="form-wrapper">
+               <form action="#!" class="footer-form">
+                  <div class="input">
+                     <label class="input-label">Full name</label>
+                     <input type="email" class="input-field" value="johndoe@gmail.com" required />
+                  </div>
+               </form>
+
+               <button class="footer-btn"><img src="./img/Vector.svg" alt=""></button>
+            </div>
+
+
+            </div>
+         </div>
+      </div>
+
+   </footer>
+
+
+
+
+
+
+
+
+   <script src="./libs/custom-selector/custom-select.min.js"></script>
+   <script src="./js/main.js"></script>
+   <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+
+</body>
+
+</html>
